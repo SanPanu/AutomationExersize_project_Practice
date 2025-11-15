@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.Test;
+import org.testng.Assert;
 import org.testng.AssertJUnit;
 import java.time.Duration;
 
@@ -10,9 +11,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class InputPractice 
@@ -28,9 +26,9 @@ public class InputPractice
 		driver.get("https://letcode.in/test");
 		driver.findElement(By.xpath("//a[normalize-space()='Edit']")).click();
 		driver.findElement(By.id("fullName")).sendKeys("Test data");
-		driver.findElement(By.id("join")).sendKeys("Text Appended Newly"+Keys.END);
+		driver.findElement(By.id("join")).sendKeys(" + Text Appended Newly",Keys.TAB);
 		String textpresentinfeild = driver.findElement(By.id("getMe")).getAttribute("value");
-		AssertJUnit.assertEquals(textpresentinfeild, "ortonikc","Text Not matching");
+		Assert.assertEquals(textpresentinfeild, "ortonikc");
 		WebElement clearText = driver.findElement(By.id("clearMe"));
 		clearText.clear();
 		WebElement disabledElement = driver.findElement(By.id("noEdit"));
