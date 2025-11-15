@@ -1,8 +1,10 @@
 package test;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.time.Duration;
 
-import org.jspecify.annotations.Nullable;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -28,7 +30,7 @@ public class InputPractice
 		driver.findElement(By.id("fullName")).sendKeys("Test data");
 		driver.findElement(By.id("join")).sendKeys("Text Appended Newly"+Keys.END);
 		String textpresentinfeild = driver.findElement(By.id("getMe")).getAttribute("value");
-		Assert.assertEquals(textpresentinfeild, "ortonikc","Text Not matching");
+		AssertJUnit.assertEquals(textpresentinfeild, "ortonikc","Text Not matching");
 		WebElement clearText = driver.findElement(By.id("clearMe"));
 		clearText.clear();
 		WebElement disabledElement = driver.findElement(By.id("noEdit"));
