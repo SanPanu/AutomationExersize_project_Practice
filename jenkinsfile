@@ -1,0 +1,46 @@
+pipeline {
+    agent any
+
+    tools {
+        maven 'Maven3'
+        jdk 'JDK17'
+    }
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/SanPanu/AutomationExersize_project_Practice.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'mvn clean install -DskipTests=true'
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+
+        stage('Publish TestNG Report') {
+            steps {
+                publishHTML([
+                    reportDir: 'test-output',
+                    reportFiles: 'index.html',
+                    reportName: 'TestNG Report'
+                ])
+            }
+        }
+    }
+
+    post {
+        always {
+            archiveArtifacts artifacts: 'test-output/**/*', fingerprint: true
+        }
+    }
+}
