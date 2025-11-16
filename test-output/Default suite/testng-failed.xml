@@ -5,7 +5,9 @@
     <classes>
       <class name="test.InputPractice">
         <methods>
-          <include name="prcticeInputFields"/>
+          <include name="practiceRadioButtons"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- test.InputPractice -->
     </classes>

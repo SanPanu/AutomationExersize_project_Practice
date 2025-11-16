@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parallel-Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ParallelTest(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test.InputPractice">
+        <methods>
+          <include name="prcticeInputFields"/>
+          <include name="practiceRadioButtons"/>
+          <include name="practicebuttons"/>
+          <include name="practiceAlerts"/>
+          <include name="practiceFrames"/>
+        </methods>
+      </class> <!-- test.InputPractice -->
+    </classes>
+  </test> <!-- ParallelTest(failed) -->
+</suite> <!-- Failed suite [Parallel-Suite] -->

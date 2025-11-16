@@ -1,17 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-15T17:20:10 IST" name="Default suite" finished-at="2025-11-15T17:20:15 IST" duration-ms="5523">
+  <suite started-at="2025-11-16T16:14:58 IST" name="Suite" finished-at="2025-11-16T16:15:25 IST" duration-ms="26889">
     <groups>
+      <group name="ui">
+        <method signature="InputPractice.practiceFrames()[pri:4, instance:test.InputPractice@515aebb0]" name="practiceFrames" class="test.InputPractice"/>
+        <method signature="InputPractice.practiceRadioButtons()[pri:5, instance:test.InputPractice@515aebb0]" name="practiceRadioButtons" class="test.InputPractice"/>
+      </group> <!-- ui -->
+      <group name="regression">
+        <method signature="InputPractice.practiceAlerts()[pri:3, instance:test.InputPractice@515aebb0]" name="practiceAlerts" class="test.InputPractice"/>
+        <method signature="InputPractice.practiceFrames()[pri:4, instance:test.InputPractice@515aebb0]" name="practiceFrames" class="test.InputPractice"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="InputPractice.prcticeInputFields()[pri:1, instance:test.InputPractice@515aebb0]" name="prcticeInputFields" class="test.InputPractice"/>
+        <method signature="InputPractice.practicebuttons()[pri:2, instance:test.InputPractice@515aebb0]" name="practicebuttons" class="test.InputPractice"/>
+        <method signature="InputPractice.practiceAlerts()[pri:3, instance:test.InputPractice@515aebb0]" name="practiceAlerts" class="test.InputPractice"/>
+        <method signature="InputPractice.practiceFrames()[pri:4, instance:test.InputPractice@515aebb0]" name="practiceFrames" class="test.InputPractice"/>
+        <method signature="InputPractice.practiceRadioButtons()[pri:5, instance:test.InputPractice@515aebb0]" name="practiceRadioButtons" class="test.InputPractice"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-11-15T17:20:10 IST" name="Default test" finished-at="2025-11-15T17:20:15 IST" duration-ms="5523">
+    <test started-at="2025-11-16T16:14:58 IST" name="SanityTests" finished-at="2025-11-16T16:15:25 IST" duration-ms="26889">
       <class name="test.InputPractice">
-        <test-method signature="prcticeInputFields()[pri:0, instance:test.InputPractice@79924b]" started-at="2025-11-15T17:20:10 IST" name="prcticeInputFields" finished-at="2025-11-15T17:20:15 IST" duration-ms="5511" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.InputPractice@515aebb0]" started-at="2025-11-16T16:14:58 IST" name="setUp" finished-at="2025-11-16T16:15:01 IST" duration-ms="2862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="prcticeInputFields()[pri:1, instance:test.InputPractice@515aebb0]" started-at="2025-11-16T16:15:01 IST" name="prcticeInputFields" finished-at="2025-11-16T16:15:03 IST" duration-ms="2641" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prcticeInputFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.InputPractice@515aebb0]" started-at="2025-11-16T16:15:03 IST" name="tearDown" finished-at="2025-11-16T16:15:03 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.InputPractice@515aebb0]" started-at="2025-11-16T16:15:03 IST" name="setUp" finished-at="2025-11-16T16:15:05 IST" duration-ms="1684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="practicebuttons()[pri:2, instance:test.InputPractice@515aebb0]" started-at="2025-11-16T16:15:05 IST" name="practicebuttons" finished-at="2025-11-16T16:15:08 IST" duration-ms="3069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- practicebuttons -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.InputPractice@515aebb0]" started-at="2025-11-16T16:15:08 IST" name="tearDown" finished-at="2025-11-16T16:15:08 IST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.InputPractice@515aebb0]" started-at="2025-11-16T16:15:08 IST" name="setUp" finished-at="2025-11-16T16:15:12 IST" duration-ms="3983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="practiceAlerts()[pri:3, instance:test.InputPractice@515aebb0]" started-at="2025-11-16T16:15:12 IST" name="practiceAlerts" finished-at="2025-11-16T16:15:12 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- practiceAlerts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.InputPractice@515aebb0]" started-at="2025-11-16T16:15:12 IST" name="tearDown" finished-at="2025-11-16T16:15:12 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.InputPractice@515aebb0]" started-at="2025-11-16T16:15:12 IST" name="setUp" finished-at="2025-11-16T16:15:18 IST" duration-ms="5642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="practiceFrames()[pri:4, instance:test.InputPractice@515aebb0]" started-at="2025-11-16T16:15:18 IST" name="practiceFrames" finished-at="2025-11-16T16:15:19 IST" duration-ms="1346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- practiceFrames -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.InputPractice@515aebb0]" started-at="2025-11-16T16:15:19 IST" name="tearDown" finished-at="2025-11-16T16:15:20 IST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.InputPractice@515aebb0]" started-at="2025-11-16T16:15:20 IST" name="setUp" finished-at="2025-11-16T16:15:23 IST" duration-ms="3505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="practiceRadioButtons()[pri:5, instance:test.InputPractice@515aebb0]" started-at="2025-11-16T16:15:23 IST" name="practiceRadioButtons" finished-at="2025-11-16T16:15:25 IST" duration-ms="1460" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a _ngcontent-ng-c3873573971="" class="card-footer-item" href="/radio">...</a> is not clickable at point (906, 685). Other element would receive the click: <iframe id="aswift_3" name="aswift_3" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251112/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;adk=1812271801&amp;client=ca-pub-6251538267574677&amp;fa=1&amp;ifi=4&amp;uci=a!4&amp;btvi=2" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CLbK2uu-9pADFeiQrAIdnzYYpw" data-load-complete="true"></iframe>
+  (Session info: chrome=142.0.7444.162)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [96f1d8c64271b57991f37c18edeb767c, clickElement {id=f.08677E4D6C7A52F8CA0596D8C8B12776.d.D9AFCED3893DC6161B90335F67C457CC.e.63}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.162, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: /var/folders/x_/zrwq44fd727...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54077}, goog:processID: 3381, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54077/devtoo..., se:cdpVersion: 142.0.7444.162, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (96f1d8c64271b57991f37c18edeb767c)] -> xpath: //a[normalize-space()='Toggle']]
+Session ID: 96f1d8c64271b57991f37c18edeb767c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-ng-c3873573971="" class="card-footer-item" href="/radio">...</a> is not clickable at point (906, 685). Other element would receive the click: <iframe id="aswift_3" name="aswift_3" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251112/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;adk=1812271801&amp;client=ca-pub-6251538267574677&amp;fa=1&amp;ifi=4&amp;uci=a!4&amp;btvi=2" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CLbK2uu-9pADFeiQrAIdnzYYpw" data-load-complete="true"></iframe>
+  (Session info: chrome=142.0.7444.162)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [96f1d8c64271b57991f37c18edeb767c, clickElement {id=f.08677E4D6C7A52F8CA0596D8C8B12776.d.D9AFCED3893DC6161B90335F67C457CC.e.63}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.162, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: /var/folders/x_/zrwq44fd727...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54077}, goog:processID: 3381, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54077/devtoo..., se:cdpVersion: 142.0.7444.162, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (96f1d8c64271b57991f37c18edeb767c)] -> xpath: //a[normalize-space()='Toggle']]
+Session ID: 96f1d8c64271b57991f37c18edeb767c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at test.InputPractice.practiceRadioButtons(InputPractice.java:114)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- practiceRadioButtons -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.InputPractice@515aebb0]" started-at="2025-11-16T16:15:25 IST" name="tearDown" finished-at="2025-11-16T16:15:25 IST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- test.InputPractice -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- SanityTests -->
+  </suite> <!-- Suite -->
 </testng-results>
