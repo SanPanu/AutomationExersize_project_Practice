@@ -1,46 +1,24 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven3'
-        jdk 'JDK17'
-    }
-
     stages {
 
         stage('Checkout') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/SanPanu/AutomationExersize_project_Practice.git'
+                git 'https://github.com/SanPanu/AutomationExersize_project_Practice.git'
             }
         }
 
-        stage('Build') {
+        stage('Build & Test') {
             steps {
-                sh 'mvn clean install -DskipTests=true'
-            }
-        }
-
-        stage('Run Tests') {
-            steps {
-                sh 'mvn test'
-            }
-        }
-
-        stage('Publish TestNG Report') {
-            steps {
-                publishHTML([
-                    reportDir: 'test-output',
-                    reportFiles: 'index.html',
-                    reportName: 'TestNG Report'
-                ])
+                sh 'mvn clean test'
             }
         }
     }
 
     post {
         always {
-            archiveArtifacts artifacts: 'test-output/**/*', fingerprint: true
+            junit '**/target/surefire-reports/*.xml'
         }
     }
 }
